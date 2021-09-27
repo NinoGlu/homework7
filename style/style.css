@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+	max-width: 1700px;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+.road{
+	position: relative;
+	height: 80%;
+	background: dimgray;
+	box-sizing: border-box;
+	border-top: 10px solid grey;
+	border-bottom: 10px solid grey;
+	width: 100%;
+}
+.lines{
+	box-sizing: border-box;
+	border: 5px dashed white;
+	width: 100%;
+	position: absolute;
+	top: 45%;
+}
+.motor-orange{
+	position: absolute;
+    top: -80px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    animation-name:driveorange;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background: none;
+}
+@keyframes driveorange{
+	from{transform: translateX(0);
+
+	}
+	to{
+transform: translateX(1700px);
+	}
+}
+.motor-red{
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    animation-name:drivered;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes drivered{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 300px;
+    }
+    40% {
+        left: 600px;
+    }
+    60% {
+        left: 800px;
+    }
+    80% {
+        left: 1000px;
+    }
+    100% {
+        left: 1300px;
+    }
+}');
