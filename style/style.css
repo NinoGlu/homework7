@@ -7,11 +7,12 @@ html,body{
 	max-width: 1700px;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 	margin: 0;
 }
 .road{
 	position: relative;
-	height: 80%;
+	height: 100%;
 	background: dimgray;
 	box-sizing: border-box;
 	border-top: 10px solid grey;
@@ -27,7 +28,7 @@ html,body{
 }
 .motor-orange{
 	position: absolute;
-    top: -80px;
+    top: -40px;
     left: 0px;
     width: 200px;
     height: 200px;
@@ -45,7 +46,7 @@ html,body{
 
 	}
 	to{
-transform: translateX(1700px);
+transform: translateX(1500px);
 	}
 }
 .motor-red{
@@ -54,12 +55,11 @@ transform: translateX(1700px);
     right: 0px;
     width: 200px;
     height: 200px;
-    background-position: center;
     animation-name:drivered;
     animation-duration: 7s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
     animation-delay: 0.5s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     
@@ -75,12 +75,12 @@ transform: translateX(1700px);
         left: 600px;
     }
     60% {
-        left: 800px;
+        left: 900px;
     }
     80% {
-        left: 1000px;
+        left: 1200px;
     }
     100% {
-        left: 1300px;
+        left: 1500px;
     }
 }');
